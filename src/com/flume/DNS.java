@@ -20,9 +20,8 @@ public class DNS {
 
     public static void main(String[] args) throws IOException {
         String raw = "7/15/2015 11:59:59 PM 106C PACKET  0000000002048020 UDP Snd 10.3.73.5       1fba R Q [9384 A  R NXDOMAIN] AAAA   (13)jp-cco-mtoda2(6)client(2)jp(8)trendnet(3)org(6)client(2)tw(8)trendnet(3)org(0)\nUDP response info at 0000000002048020\n  Socket = 336\n  Remote addr 10.3.73.5, port 56472\n  Time Query=321854, Queued=0, Expire=0\n  Buf length = 0x0fa0 (4000)\n  Msg length = 0x00a8 (168)\n  Message:\n    XID       0x1fba\n    Flags     0x8493\n      QR        1 (RESPONSE)\n      OPCODE    0 (QUERY)\n      AA        1\n      TC        0\n      RD        0\n      RA        1\n      Z         0\n      CD        1\n      AD        0\n      RCODE     3 (NXDOMAIN)\n    QCOUNT    1\n    ACOUNT    0\n    NSCOUNT   1\n    ARCOUNT   1\n    QUESTION SECTION:\n    Offset = 0x000c, RR count = 0\n    Name      \"(13)jp-cco-mtoda2(6)client(2)jp(8)trendnet(3)org(6)client(2)tw(8)trendnet(3)org(0)\"\n      QTYPE   AAAA (28)\n      QCLASS  1\n    ANSWER SECTION:\n      empty\n    AUTHORITY SECTION:\n    Offset = 0x004d, RR count = 0\n    Name      \"(6)client(2)tw(8)trendnet(3)org(0)\"\n      TYPE   SOA  (6)\n      CLASS  1\n      TTL    3600\n      DLEN   46\n      DATA   \n\t\tPrimaryServer: (11)twvmdcadc01[C054](2)tw(8)trendnet(3)org(0)\n\t\tAdministrator: (9)twntadmin[C054](2)tw(8)trendnet(3)org(0)\n\t\tSerialNo     = 6652303\n\t\tRefresh      = 900\n\t\tRetry        = 600\n\t\tExpire       = 86400\n\t\tMinimumTTL   = 3600\n    ADDITIONAL SECTION:\n    Offset = 0x009d, RR count = 0\n    Name      \"(0)\"\n      TYPE   OPT  (41)\n      CLASS  4000\n      TTL    32768\n      DLEN   0\n      DATA   \n\t\tBuffer Size  = 4000\n\t\tRcode Ext    = 0\n\t\tRcode Full   = 3\n\t\tVersion      = 0\n\t\tFlags        = 80 DO";
-        String raw2 ="7/15/2015 11:59:59 PM 11A0 PACKET  00000000023B9BA0 UDP Snd 10.3.73.5       8c9d R Q [9384 A  R NXDOMAIN] AAAA   (14)JP-KKITAMURA01(2)tw(8)trendnet(3)org(0)\nUDP response info at 00000000023B9BA0\n  Socket = 336\n  Remote addr 10.3.73.5, port 56111\n  Time Query=321854, Queued=0, Expire=0\n  Buf length = 0x0fa0 (4000)\n  Msg length = 0x008c (140)\n  Message:\n    XID       0x8c9d\n    Flags     0x8493\n      QR        1 (RESPONSE)\n      OPCODE    0 (QUERY)\n      AA        1\n      TC        0\n      RD        0\n      RA        1\n      Z         0\n      CD        1\n      AD        0\n      RCODE     3 (NXDOMAIN)\n    QCOUNT    1\n    ACOUNT    0\n    NSCOUNT   1\n    ARCOUNT   1\n    QUESTION SECTION:\n    Offset = 0x000c, RR count = 0\n    Name      \"(14)JP-KKITAMURA01(2)tw(8)trendnet(3)org(0)\"\n      QTYPE   AAAA (28)\n      QCLASS  1\n    ANSWER SECTION:\n      empty\n    AUTHORITY SECTION:\n    Offset = 0x0030, RR count = 0\n    Name      \"(2)tw(8)trendnet(3)org(0)\"\n      TYPE   SOA  (6)\n      CLASS  1\n      TTL    3600\n      DLEN   54\n      DATA   \n\t\tPrimaryServer: (11)twvmdcadc01[C030](2)tw(8)trendnet(3)org(0)\n\t\tAdministrator: (5)admin(5)trend(3)com(2)tw(0)\n\t\tSerialNo     = 2455203\n\t\tRefresh      = 900\n\t\tRetry        = 600\n\t\tExpire       = 86400\n\t\tMinimumTTL   = 3600\n    ADDITIONAL SECTION:\n    Offset = 0x0081, RR count = 0\n    Name      \"(0)\"\n      TYPE   OPT  (41)\n      CLASS  4000\n      TTL    32768\n      DLEN   0\n      DATA   \n\t\tBuffer Size  = 4000\n\t\tRcode Ext    = 0\n\t\tRcode Full   = 3\n\t\tVersion      = 0\n\t\tFlags        = 80 DO";
-        String raw3 ="7/15/2015 11:59:59 PM 11A0 PACKET  0000000002048020 UDP Snd 10.28.70.13     d951 R Q [8085 A DR  NOERROR] PTR    (3)100(2)42(2)45(2)10(7)in-addr(4)arpa(0)\nUDP response info at 0000000002048020\n  Socket = 336\n  Remote addr 10.28.70.13, port 65070\n  Time Query=321854, Queued=0, Expire=0\n  Buf length = 0x0200 (512)\n  Msg length = 0x0056 (86)\n  Message:\n    XID       0xd951\n    Flags     0x8580\n      QR        1 (RESPONSE)\n      OPCODE    0 (QUERY)\n      AA        1\n      TC        0\n      RD        1\n      RA        1\n      Z         0\n      CD        0\n      AD        0\n      RCODE     0 (NOERROR)\n    QCOUNT    1\n    ACOUNT    1\n    NSCOUNT   0\n    ARCOUNT   0\n    QUESTION SECTION:\n    Offset = 0x000c, RR count = 0\n    Name      \"(3)100(2)42(2)45(2)10(7)in-addr(4)arpa(0)\"\n      QTYPE   PTR (12)\n      QCLASS  1\n    ANSWER SECTION:\n    Offset = 0x002b, RR count = 0\n    Name      \"[C00C](3)100(2)42(2)45(2)10(7)in-addr(4)arpa(0)\"\n      TYPE   PTR  (12)\n      CLASS  1\n      TTL    1200\n      DLEN   31\n      DATA   (13)sjdc-mbdiydb1(2)us(8)trendnet(3)org(0)\n    AUTHORITY SECTION:\n      empty\n    ADDITIONAL SECTION:\n      empty";
-        String raw4 ="";
+        String raw2 = "7/15/2015 11:59:59 PM 11A0 PACKET  00000000023B9BA0 UDP Snd 10.3.73.5       8c9d R Q [9384 A  R NXDOMAIN] AAAA   (14)JP-KKITAMURA01(2)tw(8)trendnet(3)org(0)\nUDP response info at 00000000023B9BA0\n  Socket = 336\n  Remote addr 10.3.73.5, port 56111\n  Time Query=321854, Queued=0, Expire=0\n  Buf length = 0x0fa0 (4000)\n  Msg length = 0x008c (140)\n  Message:\n    XID       0x8c9d\n    Flags     0x8493\n      QR        1 (RESPONSE)\n      OPCODE    0 (QUERY)\n      AA        1\n      TC        0\n      RD        0\n      RA        1\n      Z         0\n      CD        1\n      AD        0\n      RCODE     3 (NXDOMAIN)\n    QCOUNT    1\n    ACOUNT    0\n    NSCOUNT   1\n    ARCOUNT   1\n    QUESTION SECTION:\n    Offset = 0x000c, RR count = 0\n    Name      \"(14)JP-KKITAMURA01(2)tw(8)trendnet(3)org(0)\"\n      QTYPE   AAAA (28)\n      QCLASS  1\n    ANSWER SECTION:\n      empty\n    AUTHORITY SECTION:\n    Offset = 0x0030, RR count = 0\n    Name      \"(2)tw(8)trendnet(3)org(0)\"\n      TYPE   SOA  (6)\n      CLASS  1\n      TTL    3600\n      DLEN   54\n      DATA   \n\t\tPrimaryServer: (11)twvmdcadc01[C030](2)tw(8)trendnet(3)org(0)\n\t\tAdministrator: (5)admin(5)trend(3)com(2)tw(0)\n\t\tSerialNo     = 2455203\n\t\tRefresh      = 900\n\t\tRetry        = 600\n\t\tExpire       = 86400\n\t\tMinimumTTL   = 3600\n    ADDITIONAL SECTION:\n    Offset = 0x0081, RR count = 0\n    Name      \"(0)\"\n      TYPE   OPT  (41)\n      CLASS  4000\n      TTL    32768\n      DLEN   0\n      DATA   \n\t\tBuffer Size  = 4000\n\t\tRcode Ext    = 0\n\t\tRcode Full   = 3\n\t\tVersion      = 0\n\t\tFlags        = 80 DO";
+        String raw3 = "7/15/2015 11:59:59 PM 11A0 PACKET  0000000002048020 UDP Snd 10.28.70.13     d951 R Q [8085 A DR  NOERROR] PTR    (3)100(2)42(2)45(2)10(7)in-addr(4)arpa(0)\nUDP response info at 0000000002048020\n  Socket = 336\n  Remote addr 10.28.70.13, port 65070\n  Time Query=321854, Queued=0, Expire=0\n  Buf length = 0x0200 (512)\n  Msg length = 0x0056 (86)\n  Message:\n    XID       0xd951\n    Flags     0x8580\n      QR        1 (RESPONSE)\n      OPCODE    0 (QUERY)\n      AA        1\n      TC        0\n      RD        1\n      RA        1\n      Z         0\n      CD        0\n      AD        0\n      RCODE     0 (NOERROR)\n    QCOUNT    1\n    ACOUNT    1\n    NSCOUNT   0\n    ARCOUNT   0\n    QUESTION SECTION:\n    Offset = 0x000c, RR count = 0\n    Name      \"(3)100(2)42(2)45(2)10(7)in-addr(4)arpa(0)\"\n      QTYPE   PTR (12)\n      QCLASS  1\n    ANSWER SECTION:\n    Offset = 0x002b, RR count = 0\n    Name      \"[C00C](3)100(2)42(2)45(2)10(7)in-addr(4)arpa(0)\"\n      TYPE   PTR  (12)\n      CLASS  1\n      TTL    1200\n      DLEN   31\n      DATA   (13)sjdc-mbdiydb1(2)us(8)trendnet(3)org(0)\n    AUTHORITY SECTION:\n      empty\n    ADDITIONAL SECTION:\n      empty";
         Map<String, String> bodyMap = new HashMap<String, String>();
         String[] data = raw.split(LF);
         String header = data[0];
@@ -76,11 +75,6 @@ public class DNS {
                 autSection.add(line);
             if (addSectionFlag)
                 addSection.add(line);
-//                //get XID
-//                String xid = line.split("XID")[1].replaceAll("\\s", "").trim();
-//                bodyMap.put("MessageXID", xid);
-//                System.out.println(bodyMap.get("MessageXID").replaceAll("[\\W_]+",""));
-
         }
 
         //parse msg section
@@ -89,15 +83,26 @@ public class DNS {
             String tmp = msg.replaceAll("([\\W]+)", ";");
             String key = tmp.split(";")[1];
             String value = tmp.split(";")[2];
-            bodyMap.put(key, value);
-            System.out.println("K: " + key + " V: " + value);
+            bodyMap.put("Msg_" + key, value);
         }
 
-        //parse ansert section
+        //parse answer section
         for (String ans : ansSection) {
-
+            int dataCounter = 1;
+            System.out.println("AnsS:" + ans);
+            if (ans.contains("empty")) {
+                bodyMap.put("AnsDATA", "empty");
+                break;
+            } else if (ans.contains("DATA")) {
+                String datatmp = "(" + ans.replaceAll("(\\W+)[(]", "\\|").split("\\|")[1];
+                String data = domainAnalyzer(datatmp, "");
+                System.out.println(data);
+                bodyMap.put("AnsDATA", data);
+                System.out.println("\"Ans" + "DATA" + dataCounter + "\":\"" + data + "\",");
+                dataCounter++;
+                continue;
+            }
         }
-//        System.out.println("Msg: " + msgSetcion.size() + "\nQues: " + qSection.size()  + "\nAns: " + ansSection.size() + "\nAut: " + autSection.size() + "\nAdd: " + addSection.size());
         return bodyMap;
     }
 
