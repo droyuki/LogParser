@@ -1,0 +1,1 @@
+{"DateTime":"7/15/2015 11:59:59 PM","MsgID":"106C","PACKET":"0000000002048020","Protocol":"UDP","Direction":"Snd","RequestIP":"10.3.73.5","RecordType":"AAAA ","Domain":"jp-cco-mtoda2.client.jp.trendnet.org.client.tw.trendnet.org."}
