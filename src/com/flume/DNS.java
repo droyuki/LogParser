@@ -33,7 +33,6 @@ public class DNS {
         tmpMap = parseBody(bodyMap, body);
         bodyMap.putAll(tmpMap);
         System.out.println("Result Map size: " + bodyMap.size());
-//        System.out.println(body);
     }
 
     private static Map<String, String> parseBody(Map<String, String> bodyMap, String body) {
